@@ -87,7 +87,7 @@ userImage.setOnTouchListener(new View.OnTouchListener() {
  private float spacing(MotionEvent event) {
         float x = event.getX(0) - event.getX(1);
         float y = event.getY(0) - event.getY(1);
-        float s=x  x + y  y;
+        float s=x * x + y * y;
         return (float)Math.sqrt(s);
     }
 
